@@ -5,7 +5,7 @@ let port = process.env.PORT || 3000;
 
 app.get('/questions', (req, res) => {
     res.send({
-        "name": "Juned",
+        "name": "Juned khan",
     });
 })
 
