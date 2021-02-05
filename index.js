@@ -1,8 +1,11 @@
 const express = require('express');
 const { questionData, answers } = require('./questionsData');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json())
+// use it before all route definitions
+app.use(cors({origin: '*'}));
 
 let port = process.env.PORT || 3000;
 
